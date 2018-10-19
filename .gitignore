@@ -1,0 +1,11 @@
+# Dependencies
+node_modules
+
+# DevOps extension package
+*.vsix
+
+# map files
+*.js.map
+
+# generated js files by TypeScript
+dist/**/*.js

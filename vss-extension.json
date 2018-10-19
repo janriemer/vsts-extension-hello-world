@@ -1,0 +1,66 @@
+{
+  "manifestVersion": 1,
+  "id": "HelloWorld",
+  "publisher": "",
+  "version": "1.0.0",
+  "name": "HelloWorld",
+  "description": "A sample Visual Studio Services extension",
+  "public": false,
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "scopes": [
+    "vso.work",
+    "vso.code",
+    "vso.build"
+  ],
+  "categories": [
+    "Code"
+  ],
+  "files": [
+    {
+      "path": "dist",
+      "addressable": true
+    },
+    {
+      "path": "src",
+      "addressable": true
+    },
+    {
+      "path": "node_modules/vss-web-extension-sdk/lib/VSS.SDK.js",
+      "addressable": true
+    },
+    {
+      "path": "node_modules/lodash/lodash.js",
+      "addressable": true
+    }
+  ],
+  "contributions": [
+    {
+      "id": "HelloWorld.HelloWorld",
+      "type": "ms.vss-web.hub-group",
+      "description": "Entry point",
+      "targets": [
+        "ms.vss-web.project-hub-groups-collection"
+      ],
+      "properties": {
+        "name": "Index",
+        "uri": "dist/index.html"
+      }
+    },
+    {
+      "id": "Other",
+      "type": "ms.vss-web.hub",
+      "description": "Shows hello world text",
+      "targets": [
+        ".HelloWorld.HelloWorld"
+      ],
+      "properties": {
+        "name": "HelloWorld",
+        "uri": "dist/hello-world.html"
+      }
+    }
+  ]
+}
