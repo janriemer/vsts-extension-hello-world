@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
 </head>
 <body>
-        <script src="../node_modules/vss-web-extension-sdk/lib/VSS.SDK.js"></script>
-        <script src="../node_modules/lodash/lodash.js"></script>
+        <script src="../VSS.SDK.js"></script>
         <script type="text/javascript">
             // Initialize the VSS sdk
             VSS.init({
@@ -14,7 +13,7 @@
                 usePlatformStyles: true,
                 moduleLoaderConfig: {
                     paths: {
-                        "dist": "dist"
+                        "lodash": "lodash"
                     }
                 }
             });
