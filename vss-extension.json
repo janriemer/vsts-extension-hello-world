@@ -29,12 +29,14 @@
       "addressable": true
     },
     {
-      "path": "node_modules/vss-web-extension-sdk/lib/VSS.SDK.js",
-      "addressable": true
+      "path": "node_modules/vss-web-extension-sdk/lib",
+      "addressable": true,
+      "packagePath": "lib"
     },
     {
-      "path": "node_modules/lodash/lodash.js",
-      "addressable": true
+      "path": "node_modules/lodash",
+      "addressable": true,
+      "packagePath": "lib"
     }
   ],
   "contributions": [
